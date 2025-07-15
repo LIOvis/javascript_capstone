@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+
+$amaranth-purple: #a63446;
+$hunyadi-yellow: #f6ae2d;
+$viridian: #558b6e;
+$palatinate-blue: #5035e9;
+$indigo: #590099;
+$periwinkle: #ccc9e7;
+$space-cadet: #1c1f33;
+$eerie-black: #222222;
+
+$box-shadow-values: 0px 4px 10px 0px #673f9187;
+$font-family-values: "Megrim", fantasy;
+
+@keyframes color-change {
+  0% {
+    color: $amaranth-purple;
+  }
+  20% {
+    color: $hunyadi-yellow;
+  }
+  40% {
+    color: $viridian;
+  }
+  60% {
+    color: $palatinate-blue;
+  }
+  80% {
+    color: $indigo;
+  }
+  100% {
+    color: $amaranth-purple;
+  }
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+@keyframes color-change {
+  0% {
+    color: #a63446;
+  }
+  20% {
+    color: #f6ae2d;
+  }
+  40% {
+    color: #558b6e;
+  }
+  60% {
+    color: #5035e9;
+  }
+  80% {
+    color: #590099;
+  }
+  100% {
+    color: #a63446;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1f33;
+  display: flex;
+  gap: 30px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+body .text {
+  font-family: "Megrim", fantasy;
+  font-size: 30px;
+  line-height: 38px;
+}
+body .button {
+  border-radius: 20px;
+  padding: 8px;
+}
+body .button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 0px rgba(103, 63, 145, 0.5294117647);
+}
+body .side-bar-wrapper {
+  background-color: #ccc9e7;
+  color: #222222;
+  padding: 18px;
+  width: 200px;
+}
+body .side-bar-wrapper .names-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+body .side-bar-wrapper .names-wrapper .name-wrapper .name {
+  font-size: 20px;
+  padding-bottom: 8%;
+}
+body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .minus,
+body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .plus {
+  color: #222222;
+  font-size: 18px;
+  width: 30px;
+  font-weight: bold;
+}
+body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .minus {
+  background-color: #a63446;
+}
+body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .plus {
+  background-color: #558b6e;
+}
+body .main-page-wrapper {
+  width: calc(100% - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-page-wrapper .generator-wrapper {
+  height: 250px;
+  width: 50%;
+  min-width: 300px;
+  padding: 18px;
+  background-color: #ccc9e7;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main-page-wrapper .generator-wrapper .picked-wrapper {
+  color: #222222;
+  width: 100%;
+}
+body .main-page-wrapper .generator-wrapper .picked-wrapper small {
+  font-size: 14px;
+  line-height: 16px;
+}
+body .main-page-wrapper .generator-wrapper .pick-wrapper {
+  background-color: #222222;
+  color: #a63446;
+  padding: 8px 18px;
+  animation-name: color-change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}/*# sourceMappingURL=common.css.map */

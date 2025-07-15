@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+@keyframes color-change {
+  0% {
+    color: #a63446;
+  }
+  20% {
+    color: #f6ae2d;
+  }
+  40% {
+    color: #558b6e;
+  }
+  60% {
+    color: #5035e9;
+  }
+  80% {
+    color: #590099;
+  }
+  100% {
+    color: #a63446;
+  }
+}/*# sourceMappingURL=variables.css.map */
