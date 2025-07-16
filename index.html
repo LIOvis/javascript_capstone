@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/common/common.css" />
     <title>Lio's Random Student Generator</title>
   </head>
@@ -10,51 +17,72 @@
     <div class="side-bar-wrapper">
       <div class="names-wrapper">
         <div class="name-wrapper">
-          <div class="text name">placeholer name</div>
+          <div class="text name" id="name1">hello</div>
           <div class="buttons-wrapper">
-            <div class="button minus">-</div>
-            <div class="button plus">+</div>
+            <div onclick="changeWeight(1, '-')" class="button">
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <div onclick="changeWeight(1, '+')" class="button">
+              <i class="fa-solid fa-plus"></i>
+            </div>
           </div>
         </div>
         <div class="name-wrapper">
-          <div class="text name">placeholer name</div>
+          <div class="text name" id="name2"></div>
           <div class="buttons-wrapper">
-            <div class="button minus">-</div>
-            <div class="button plus">+</div>
+            <div onclick="changeWeight(2, '-')" class="button">
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <div onclick="changeWeight(2, '+')" class="button">
+              <i class="fa-solid fa-plus"></i>
+            </div>
           </div>
         </div>
         <div class="name-wrapper">
-          <div class="text name">placeholer name</div>
+          <div class="text name" id="name3"></div>
           <div class="buttons-wrapper">
-            <div class="button minus">-</div>
-            <div class="button plus">+</div>
+            <div onclick="changeWeight(3, '-')" class="button">
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <div onclick="changeWeight(3, '+')" class="button">
+              <i class="fa-solid fa-plus"></i>
+            </div>
           </div>
         </div>
         <div class="name-wrapper">
-          <div class="text name">placeholer name</div>
+          <div class="text name" id="name4"></div>
           <div class="buttons-wrapper">
-            <div class="button minus">-</div>
-            <div class="button plus">+</div>
+            <div onclick="changeWeight(4, '-')" class="button">
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <div onclick="changeWeight(4, '+')" class="button">
+              <i class="fa-solid fa-plus"></i>
+            </div>
           </div>
         </div>
         <div class="name-wrapper">
-          <div class="text name">placeholer name</div>
+          <div class="text name" id="name5"></div>
           <div class="buttons-wrapper">
-            <div class="button minus">-</div>
-            <div class="button plus">+</div>
+            <div onclick="changeWeight(4, '-')" class="button">
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <div onclick="changeWeight(0, '+')" class="button">
+              <i class="fa-solid fa-plus"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="main-page-wrapper">
       <div class="generator-wrapper">
-        <div class="text picked-wrapper">
+        <div class="text picked-wrapper" id="picked">
           pikachu i choose you!<br /><small
             >...what do you mean this isn't pokemon?</small
           >
         </div>
-        <div class="text button pick-wrapper">pick me!</div>
+        <div onclick="spin()" class="text button pick-wrapper">pick me!</div>
       </div>
     </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

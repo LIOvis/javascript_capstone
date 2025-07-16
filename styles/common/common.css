@@ -37,6 +37,8 @@ body .text {
 body .button {
   border-radius: 20px;
   padding: 8px;
+  background-color: #222222;
+  color: #ccc9e7;
 }
 body .button:hover {
   cursor: pointer;
@@ -64,18 +66,8 @@ body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper {
   align-items: center;
   gap: 18px;
 }
-body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .minus,
-body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .plus {
-  color: #222222;
-  font-size: 18px;
+body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .button {
   width: 30px;
-  font-weight: bold;
-}
-body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .minus {
-  background-color: #a63446;
-}
-body .side-bar-wrapper .names-wrapper .name-wrapper .buttons-wrapper .plus {
-  background-color: #558b6e;
 }
 body .main-page-wrapper {
   width: calc(100% - 200px);

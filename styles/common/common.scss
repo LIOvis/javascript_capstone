@@ -19,6 +19,8 @@ body {
   .button {
     border-radius: 20px;
     padding: 8px;
+    background-color: $eerie-black;
+    color: $periwinkle;
 
     &:hover {
       cursor: pointer;
@@ -50,20 +52,8 @@ body {
           align-items: center;
           gap: 18px;
 
-          .minus,
-          .plus {
-            color: $eerie-black;
-            font-size: 18px;
+          .button {
             width: 30px;
-            font-weight: bold;
-          }
-
-          .minus {
-            background-color: $amaranth-purple;
-          }
-
-          .plus {
-            background-color: $viridian;
           }
         }
       }
