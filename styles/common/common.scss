@@ -33,6 +33,15 @@ body {
     color: $eerie-black;
     padding: 18px;
     width: 200px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    .key-wrapper {
+      font-size: 25px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $eerie-black;
+    }
 
     .names-wrapper {
       display: flex;

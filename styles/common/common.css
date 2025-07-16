@@ -49,6 +49,14 @@ body .side-bar-wrapper {
   color: #222222;
   padding: 18px;
   width: 200px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+body .side-bar-wrapper .key-wrapper {
+  font-size: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #222222;
 }
 body .side-bar-wrapper .names-wrapper {
   display: flex;

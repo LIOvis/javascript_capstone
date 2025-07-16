@@ -10,28 +10,7 @@ let userList = [];
 let shuffle = [];
 let picked = document.getElementById("picked");
 
-let users = [
-  {
-    id: 1,
-    firstName: "Rachelle",
-  },
-  {
-    id: 2,
-    firstName: "Heydar",
-  },
-  {
-    id: 3,
-    firstName: "Lio",
-  },
-  {
-    id: 4,
-    firstName: "Stephanie",
-  },
-  {
-    id: 5,
-    firstName: "Kai",
-  },
-];
+let users = [];
 
 const wait = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -54,9 +33,21 @@ function shuffleArray(array) {
   return array;
 }
 
+async function getUsers() {
+  await fetch("https://javascript-capstone-backend.onrender.com/users")
+    .then((res) => res.json())
+    .then((data) => {
+      users = data;
+      addWeight();
+      renderUsers();
+    })
+    .catch((err) => console.error("Error: " + err));
+}
+
 function addWeight() {
   for (i = 0; i < 5; i++) {
     users[i].weight = 1;
+    console.log(users[i]);
   }
 }
 
@@ -107,6 +98,7 @@ async function spin() {
       shuffle.push(user.firstName);
     }
   }
+  console.log(shuffle);
 
   await spinning();
 
@@ -130,16 +122,8 @@ async function spin() {
   }
 }
 
-addWeight();
-renderUsers();
+async function populate() {
+  await getUsers();
+}
 
-// async function getUsers() {
-//   await fetch("https://javascript-capstone-backend.onrender.com/users")
-//     .then((res) => res.json())
-//     .then((data) => {
-//       console.log(data);
-//     })
-//     .catch((err) => err);
-// }
-
-// getUsers();
+populate();
