@@ -47,7 +47,7 @@ async function getUsers() {
 function addWeight() {
   for (i = 0; i < 5; i++) {
     users[i].weight = 1;
-    console.log(users[i]);
+    // console.log(users[i]);
   }
 }
 
@@ -98,7 +98,7 @@ async function spin() {
       shuffle.push(user.firstName);
     }
   }
-  console.log(shuffle);
+  // console.log(shuffle);
 
   await spinning();
 
